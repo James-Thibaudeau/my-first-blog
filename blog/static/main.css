@@ -1,0 +1,50 @@
+html {
+	border-bottom-style: none;
+}
+h1, h2, h3 {
+    font-size: 0.75em;
+	border-style: none;
+	
+}
+
+
+p1 {
+	font-size: 2em;
+	
+}
+
+a {
+    font-size: 2em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #0F497B;
+}
+.hovered {
+    opacity: .6;
+}
+
+.active {
+    background-color: blue;
+}
