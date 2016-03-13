@@ -1,4 +1,6 @@
 {% load staticfiles %}
+{% load tz %}
+<!-- This is the base template html file. I added the load tz to attempt to fix the timezone problem -->
 <html>
     <head>
         <title>James' Django Blog</title>
@@ -21,8 +23,10 @@
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
+			{% localtime on %}
             {% block content %}
             {% endblock %}
+			{% endlocaltime %}
             </div>
         </div>
     </div>

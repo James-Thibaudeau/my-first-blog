@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from django.db import models
 from django.utils import timezone
 
-
+'''The Post model is the model for blog posts'''
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
@@ -23,6 +23,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+"""The comment model is the model for comments"""
 class Comment(models.Model):
     post = models.ForeignKey('blog.Post', related_name='comments')
     author = models.CharField(max_length=200)
